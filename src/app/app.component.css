@@ -1,0 +1,11 @@
+
+mat-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.opcion:hover {
+    color: yellow;
+}

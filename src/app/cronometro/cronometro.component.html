@@ -1,0 +1,26 @@
+<div class="main">
+    <div class="contador">
+        <h1>{{hours}}:{{minutes}}:{{seconds}}</h1>
+    </div>
+    <div class="botones">
+        <button class="pause" (click)="pause()">
+            PAUSE
+        </button>
+            <button class="play" (click)="play()">
+                PLAY
+            </button>
+            <button class="record" (click)="record()">
+                RECORD
+            </button>
+            <button class="volver" (click)="volver()">VOLVER</button>
+    </div>
+    <div class="tiempos">
+        <h1>TIEMPOS</h1>
+        <ul>
+            <app-lapso *ngFor="let t of listRecord"
+            [hours]="t.hours"
+            [minutes]="t.minutes"
+            [seconds]="t.seconds"></app-lapso>
+        </ul>
+    </div>
+</div>

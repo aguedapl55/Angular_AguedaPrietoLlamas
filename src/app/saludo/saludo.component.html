@@ -1,0 +1,9 @@
+<div class="main">
+    <h1 *ngIf="numvisitas == 0; else vacio" class="saludo">Hola, ¿que tal estás?</h1>
+    <h1 *ngIf="numvisitas != 0; else vacio" class="saludo">Bienvenido de vuelta</h1>
+    <button class="volver" (click)="volver()">VOLVER</button>
+</div>
+
+<ng-template #vacio>
+    <div></div>
+</ng-template>

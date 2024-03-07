@@ -5,14 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { CronometroComponent } from './cronometro/cronometro.component';
+import { SaludoComponent } from './saludo/saludo.component';
+import { LapsoComponent } from './lapso/lapso.component'; 
+import {MatButtonModule} from '@angular/material/button';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CronometroComponent,
+    SaludoComponent,
+    LapsoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule, 
+    MatToolbarModule, 
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
